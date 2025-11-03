@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toko Saya TERnet</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🛍️ TErnet store</h1>
+            <nav>
+                <a href="#produk">Produk</a>
+                <a href="#cara-order">Cara Order</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="produk">
+        <div class="container">
+            <h2>TErnet store sungailiat</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="kabel utp.jpeg" alt="Kabel UTP cat 5e">
+                    <h3>Kabel LAN/UTP Vascolink Cat5e</h3>
+                    <p class="description">Vascolink kabel FTP Cat5e Outdoor adalah kabel FTP yang dibuat agar dapat tahan terhadap panas dan hujan</p>
+                    <p class="price">Rp 535.520</p>
+                    <button onclick="pesanProduk('Produk Premium 1', 535.520)">Pesan Sekarang</button>
+                </div>
+
+                <div class="product-card">
+                    <img src="rj45 nyk.jpeg" alt="rj45">
+                    <h3>RJ45 konektor NYK cat5 100pcs</h3>
+                    <p class="description">8P8C Modular, Color: RJ45 Cat5, Connector: 24K Gold Plated</p>
+                    <p class="price">Rp 32.900</p>
+                    <button onclick="pesanProduk('Produk Eksklusif 2', 32.900)">Pesan Sekarang</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="kabel fo.jpeg" alt="fo">
+                    <h3>Kabel FO Dropcor 1 core</h3>
+                    <p class="description">Kabel Drop wire FO/ DW optik 1 core 1rol=1.000meter</p>
+                    <p class="price">Rp 519.200</p>
+                    <button onclick="pesanProduk('Produk Terlaris 3', 519.200)">Pesan Sekarang</button>
+                </div>
+                <div class="product-card">
+                    <img src="pigtail.jpeg" alt="pigtail">
+                    <h3>Pigtail SC UPC 2mili</h3>
+                    <p class="description">Pigtail SC UPC 2mili isi 10pcs panjang 1meter</p>
+                    <p class="price">Rp 41.399</p>
+                    <button onclick="pesanProduk('Produk Baru 4', 41.399)">Pesan Sekarang</button>
+                </div>
+                <div class="product-card">
+                    <img src="konektor.jpeg" alt="fast konektor">
+                    <h3>fastconnector buaya UPC 1pack isi 10</h3>
+                    <p class="description">Serat optik:2.0*3.0, Gaya tarik:20N, Serat optik</p>
+                    <p class="price">Rp 27.300</p>
+                    <button onclick="pesanProduk('Produk Pilihan 5', 27.300)">Pesan Sekarang</button>
+                </div>
+                <div class="product-card">
+                    <img src="lantes.jpeg" alt="Lantester">
+                    <h3>LAN tester RJ45 dan RJ11</h3>
+                    <p class="description">LAN tester RJ45 dan RJ11 untuk mengecek koneksi sambungan kabel LAN.</p>
+                    <p class="price">Rp 32.806</p>
+                    <button onclick="pesanProduk('Produk Spesial 6', 32.806)">Pesan Sekarang</button>
+                </div>
+                <div class="product-card">
+                    <img src="swich.jpeg" alt="swich">
+                    <h3>Switch TP-LINK TL-SF1008D 8 PORT</h3>
+                    <p class="description">8 PORT 10/100Mbps, Green Ethernet technology saves power</p>
+                    <p class="price">Rp 100.120</p>
+                    <button onclick="pesanProduk('Produk Unggulan 7', 100.120)">Pesan Sekarang</button>
+                </div>
+                <div class="product-card">
+                    <img src="mikrotik.jpeg" alt="mikrotik">
+                    <h3>Mikrotik RB750r2 850MHZ 5port</h3>
+                    <p class="description">Size ram: 256mb, 10/100/1000 Ethernet: 5, PoE in, Power 5W</p>
+                    <p class="price">Rp 685.520</p>
+                    <button onclick="pesanProduk('Produk Handmade 8', 685.520)">Pesan Sekarang</button>
+                </div>
+                <div class="product-card">
+                    <img src="ac.jpeg" alt="accesspoint">
+                    <h3>Router Wireless TP-LINK TL-WR 840N 300Mbps</h3>
+                    <p class="description">300Mbps data wireless nirkabel, bandwidth berbasis ip,</p>
+                    <p class="price">Rp 133.929</p>
+                    <button onclick="pesanProduk('Produk Gaya 9', 88000)">Pesan Sekarang</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <section id="cara-order">
+        <div class="container">
+            <h2>✅ Cara pemesanan di toko Ternet store:</h2>
+            <ol>
+                <li>*Pilih Produk:* Lihat produk di atas dan tentukan pilihan Anda.</li>
+                <li>*Klik "Pesan Sekarang":* Tombol ini akan langsung membawa Anda ke nomor WhatsApp kami.</li>
+                <li>*Pesanan Otomatis:* Detail produk (nama dan harga) sudah terisi otomatis di WhatsApp.</li>
+                <li>*Konfirmasi & Bayar:* Cukup kirim pesan, dan kami akan langsung packing paket anda!</li>
+            </ol>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TErnet stor. Dibuat dengan Visual Studio Code.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

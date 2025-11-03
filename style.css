@@ -1,0 +1,183 @@
+/* style.css */
+
+/* Reset Dasar */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header & Navigasi */
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    display: inline-block;
+}
+
+header nav {
+    float: right;
+    margin-top: 5px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #ff9900; /* Warna Hover */
+}
+
+/* Bagian Utama - Katalog Produk */
+main {
+    padding: 40px 0;
+    text-align: center;
+}
+
+main h2 {
+    font-size: 2rem;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+/* Grid untuk 10 Produk */
+.product-grid {
+    display: grid;
+    /* Tampilan default 3 kolom di layar lebar */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 20px 0;
+}
+
+/* Kartu Produk */
+.product-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product-card h3 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card .description {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.product-card .price {
+    font-size: 1.5rem;
+    color: #e67e22; /* Warna harga menonjol */
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Tombol Pesan Sekarang */
+.product-card button {
+    background-color: #25d366; /* Hijau WhatsApp */
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #128c7e;
+}
+
+/* Cara Order Section */
+#cara-order {
+    background-color: #eaf0f6;
+    padding: 40px 0;
+}
+
+#cara-order h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 25px;
+}
+
+#cara-order ol {
+    list-style-position: inside;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#cara-order li {
+    background: white;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #ccc;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 0.9rem;
+}
+
+/* Media Queries untuk Responsif (di HP) */
+@media (max-width: 768px) {
+    .product-grid {
+        /* Di layar kecil, ubah menjadi 2 kolom */
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    header nav {
+        float: none;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    header nav a {
+        margin: 0 10px;
+    }
+}
